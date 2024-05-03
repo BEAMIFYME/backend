@@ -31,3 +31,4 @@ And deploy the image to docker
 npm run docker:serve:api
 npm run docker:serve:discord
 ```
+If you use something like [Portainer]() for your docker management, you can easily deploy the images to your server, as we've provided a [Stack YML](config/yaml/stack.yml)
