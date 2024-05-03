@@ -27,6 +27,15 @@
       "compilerOptions": {
         "tsConfigPath": "apps/discord/tsconfig.app.json"
       }
+    },
+    "beamify": {
+      "type": "library",
+      "root": "libs/beamify",
+      "entryFile": "index",
+      "sourceRoot": "libs/beamify/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/beamify/tsconfig.lib.json"
+      }
     }
   }
 }

@@ -17,6 +17,13 @@
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
-    "paths": {}
+    "paths": {
+      "@mediaengine/beamify": [
+        "libs/beamify/src"
+      ],
+      "@mediaengine/beamify/*": [
+        "libs/beamify/src/*"
+      ]
+    }
   }
 }
