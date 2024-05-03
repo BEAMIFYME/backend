@@ -23,6 +23,12 @@
       ],
       "@mediaengine/beamify/*": [
         "libs/beamify/src/*"
+      ],
+      "@gamification/gamify": [
+        "libs/gamify/src"
+      ],
+      "@gamification/gamify/*": [
+        "libs/gamify/src/*"
       ]
     }
   }

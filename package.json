@@ -6,6 +6,15 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
+    "-- | [ Versioning ] | --": "",
+    "update:version": "npm version patch --no-git-tag-version",
+    "-- | [ Docker Build ] | --": "",
+    "docker:build:api": "docker build -t api .",
+    "docker:build:discord": "docker build -t discord .",
+    "-- | [ Docker Deploy ] | --": "",
+    "docker:serve:api": "docker run -p 3021:3021 api",
+    "docker:serve:discord": "docker run -p 3021:3021 api",
+    "-- | [ Nest Build ] | --": "",
     "build": "nest build",
     "format": "prettier --write \"apps/**/*.ts\" \"libs/**/*.ts\"",
     "start": "nest start",
@@ -70,7 +79,8 @@
       "<rootDir>/libs/"
     ],
     "moduleNameMapper": {
-      "^@mediaengine/beamify(|/.*)$": "<rootDir>/libs/beamify/src/$1"
+      "^@mediaengine/beamify(|/.*)$": "<rootDir>/libs/beamify/src/$1",
+      "^@gamification/gamify(|/.*)$": "<rootDir>/libs/gamify/src/$1"
     }
   }
 }

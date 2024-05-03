@@ -36,6 +36,15 @@
       "compilerOptions": {
         "tsConfigPath": "libs/beamify/tsconfig.lib.json"
       }
+    },
+    "gamify": {
+      "type": "library",
+      "root": "libs/gamify",
+      "entryFile": "index",
+      "sourceRoot": "libs/gamify/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/gamify/tsconfig.lib.json"
+      }
     }
   }
 }
