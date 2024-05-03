@@ -19,3 +19,15 @@ DISCORD ENV
 ```bash
 cp apps/discord/.env.example apps/api/.env
 ```
+
+Then update the .env file with the necessary environment variables for your environment.  
+You can then 'Build' the docker image for each application.
+```code
+npm run docker:build:api
+npm run docker:build:discord
+```
+And deploy the image to docker
+```code
+npm run docker:serve:api
+npm run docker:serve:discord
+```
