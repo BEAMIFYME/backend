@@ -5,9 +5,7 @@
   "compilerOptions": {
     "deleteOutDir": true,
     "webpack": true,
-    "tsConfigPath": "apps/api/tsconfig.app.json",
-    "assets": ["apps/api/**/*.png"],
-    "watchAssets": true
+    "tsConfigPath": "apps/api/tsconfig.app.json"
   },
   "monorepo": true,
   "root": "apps/api",
@@ -18,7 +16,8 @@
       "entryFile": "main",
       "sourceRoot": "apps/api/src",
       "compilerOptions": {
-        "tsConfigPath": "apps/api/tsconfig.app.json"
+        "tsConfigPath": "apps/api/tsconfig.app.json",
+        "assets": ["assets/**/*", "client/**/*"]
       }
     },
     "discord": {
