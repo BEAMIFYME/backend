@@ -183,7 +183,8 @@
     ],
     "moduleNameMapper": {
       "^@mediaengine/beamify(|/.*)$": "<rootDir>/libs/beamify/src/$1",
-      "^@gamification/gamify(|/.*)$": "<rootDir>/libs/gamify/src/$1"
+      "^@gamification/gamify(|/.*)$": "<rootDir>/libs/gamify/src/$1",
+      "^@logger/logger(|/.*)$": "<rootDir>/libs/logger/src/$1"
     }
   }
 }

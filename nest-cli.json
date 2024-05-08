@@ -5,7 +5,9 @@
   "compilerOptions": {
     "deleteOutDir": true,
     "webpack": true,
-    "tsConfigPath": "apps/api/tsconfig.app.json"
+    "tsConfigPath": "apps/api/tsconfig.app.json",
+    "assets": ["apps/api/**/*.png"],
+    "watchAssets": true
   },
   "monorepo": true,
   "root": "apps/api",
@@ -44,6 +46,15 @@
       "sourceRoot": "libs/gamify/src",
       "compilerOptions": {
         "tsConfigPath": "libs/gamify/tsconfig.lib.json"
+      }
+    },
+    "logger": {
+      "type": "library",
+      "root": "libs/logger",
+      "entryFile": "index",
+      "sourceRoot": "libs/logger/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/logger/tsconfig.lib.json"
       }
     }
   }
